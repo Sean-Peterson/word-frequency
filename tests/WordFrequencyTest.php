@@ -53,7 +53,7 @@
 
         }
 
-        function test_WordFrequency_checkforpunctuation()
+        function test_WordFrequency_checkforSymbols()
         {
             //Arrange
             $user_input_one = "The cAt WaLked the elephant and the other Cat.";
@@ -72,6 +72,21 @@
         {
             //Arrange
             $user_input_one = "th2e ca1t wa3lked the elep1hant and the ot8her c0at";
+            $user_input_two = "cat";
+            $test_word_frequency = new WordFrequency($user_input_one, $user_input_two);
+
+
+            //Act
+            $result = $test_word_frequency->wordFrequency();
+
+            //Assert
+            $this->assertEquals(2, $result);
+
+        }
+        function test_WordFrequency_checkforSymbolsandNumbers()
+        {
+            //Arrange
+            $user_input_one = "th2e ca1t wa3lked the elep1hant and the ot8her c0at.";
             $user_input_two = "cat";
             $test_word_frequency = new WordFrequency($user_input_one, $user_input_two);
 
