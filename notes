@@ -3,4 +3,14 @@ The user will also be prompted to put in a single word in order to check if that
 The user will then be prompted to click the submit button.
 The submit button will take them to a results page.
 The results page will display to the user their sentence, their single word, and a number that represents the amount of times that their word was in their sentence.
-The results page will also have a button to take the user back to the homepage and restart the experience. 
+The results page will also have a button to take the user back to the homepage and restart the experience.
+
+Example:
+user input 1 = the cat walked the elephant
+user input 2 = elephant
+result = your word matched a word in your sentence: 1 time
+
+Example 2:
+user input 1 = the cat walked the elephant and the other cat
+user input 2 = cat
+result = your word matched a word in your sentence: 2 times
