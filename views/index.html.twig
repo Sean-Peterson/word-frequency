@@ -2,9 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Word Counter</title>
     </head>
     <body>
-
+        <h1>Word Counter</h1>
+        <h3>How many times does a word occur in a sentence or paragraph?</h3>
+        <p>Type in your sentence or paragraph and the word you want to check</p>
+        <form action="/results" method="post">
+            <input type="text" name="string" placeholder="sentence or paragraph">
+            <input type="text" name="word" placeholder="word">
+            <button type="submit" name="button">submit</button>
+        </form>
     </body>
 </html>
