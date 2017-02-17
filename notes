@@ -22,3 +22,9 @@ user input 1 = The cAt WaLked the elephant and the other Cat
 user input 2 = cat
 result = 2
 //this test will tell us if the function can handle capitalization.
+
+Example 4:
+user input 1 = the cat walked the elephant and the other cat.
+user input 2 = cat
+result = 2
+//this test will tell us if the function can handle punctuation.

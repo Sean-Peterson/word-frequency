@@ -52,4 +52,20 @@
             $this->assertEquals(2, $result);
 
         }
+
+        function test_WordFrequency_checkforpunctuation()
+        {
+            //Arrange
+            $user_input_one = "The cAt WaLked the elephant and the other Cat.";
+            $user_input_two = "cat";
+            $test_word_frequency = new WordFrequency($user_input_one, $user_input_two);
+
+
+            //Act
+            $result = $test_word_frequency->wordFrequency();
+
+            //Assert
+            $this->assertEquals(2, $result);
+
+        }
     }
