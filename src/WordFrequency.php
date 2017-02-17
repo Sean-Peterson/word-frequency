@@ -14,6 +14,7 @@ class WordFrequency
 
     function wordFrequency(){
         $string = $this->user_input_one;
+        $string = strtolower($string);
         $check = $this->user_input_two;
         $total = 0;
         $check_against = explode(" ", $string);
