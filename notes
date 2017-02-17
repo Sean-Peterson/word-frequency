@@ -27,4 +27,16 @@ Example 4:
 user input 1 = the cat walked the elephant and the other cat.
 user input 2 = cat
 result = 2
-//this test will tell us if the function can handle punctuation.
+//this test will tell us if the function can handle symbols.
+
+Example 5:
+user input 1 = th2e ca1t wa3lked the elep1hant and the ot8her c0at
+user input 2 = cat
+result = 2
+//this test will tell us if the function can handle numbers.
+
+Example 6:
+user input 1 = th2e ca1t wa3lked the elep1hant and the ot8her c0at.
+user input 2 = cat
+result = 2
+//this test will tell us if the function can handle numbers and symbols.
