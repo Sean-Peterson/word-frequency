@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <title>Results</title>
     </head>
     <body>
-        <h1>Results</h1>
-        <p>The amount of times your word appears is: {{result}}</p>
-        <form action="/" method="get">
-            <button type="submit" name="button">Home</button>
-        </form>
+        <div class="container">
+            <h1>Results</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Your sentence/paragraph</h2>
+                    <h3>{{string}}</h3>
+                </div>
+                <div class="col-md-6">
+                    <h2>Your Word</h2>
+                    <h3>{{word}}</h3>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>The amount of times your word appears is: {{result}}</p>
+            <form action="/" method="get">
+                <button type="submit" name="button">Home</button>
+            </form>
+        </div>
     </body>
 </html>

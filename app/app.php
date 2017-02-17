@@ -16,9 +16,11 @@
     });
 
     $app->post("/results", function() use ($app) {
+        $string = $_POST['string'];
+        $word = $_POST['word'];
         $new_word_frequency = new WordFrequency($_POST['string'], $_POST['word']);
         $result = $new_word_frequency->wordFrequency();
-        return $app['twig']->render('results.html.twig', array('result'=>$result));
+        return $app['twig']->render('results.html.twig', array('result'=>$result, 'string'=>$string, 'word'=>$word));
     });
 
 
