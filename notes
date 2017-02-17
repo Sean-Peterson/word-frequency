@@ -8,17 +8,17 @@ The results page will also have a button to take the user back to the homepage a
 Example:
 user input 1 = the cat walked the elephant
 user input 2 = elephant
-result = your word matched a word in your sentence: 1 time
+result = 1
 //this test will tell us if the function works as expected.
 
 Example 2:
 user input 1 = the cat walked the elephant and the other cat
 user input 2 = cat
-result = your word matched a word in your sentence: 2 times
+result = 2
 //this test will tell us if the function checks the entire sentence for more than one occurrence of the word.
 
 Example 3:
 user input 1 = The cAt WaLked the elephant and the other Cat
 user input 2 = cat
-result = your word matched a word in your sentence: 2 times
+result = 2
 //this test will tell us if the function can handle capitalization.
