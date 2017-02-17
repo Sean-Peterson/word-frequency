@@ -14,10 +14,10 @@
 
 
             //Act
-            $result = $test_numbers_to_words->numbers_to_words();
+            $result = $test_word_frequency->wordFrequency();
 
             //Assert
-            $this->assertEquals("", $result);
+            $this->assertEquals(1, $result);
 
         }
     }
